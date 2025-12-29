@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="javascript_homework2.js" defer></script>
+</head>
+<h1>Hello</h1>
+<body>
+<ol id="assignment2"></ol>
+<ul id="assignment3"></ul>
+<ul id="assignment6"></ul>
+<script>'use strict';
+// assignment 1
+const numbers = [];
+for (let i = 0; i < 5; i++) {
+    let number = prompt("Enter a number");
+    let number1 = parseInt(number);
+    numbers.push(number1);
+}
+
+for (let i = numbers.length - 1; i >= 0; i--) {
+    console.log(numbers[i]);
+}
+</script>
+<script> 'use strict';
+// assignment 2
+const number = prompt("Enter a number");
+let number1 = parseInt(number);
+const participants = []
+for (let i = 0; i < number1; i++)
+    participants.push(prompt("Enter a participant"));
+participants.sort()
+let list = document.querySelector("#assignment2");
+for (let name of participants) {
+    const li = document.createElement(`li`);
+    li.textContent = name;
+    list.appendChild(li);
+}
+
+</script>
+
+<!--assignment 3-->
+<script> 'use strict';
+const dogs = []
+for (let i = 0; i < 6; i++) {
+    const name = prompt("Enter a name");
+    dogs.push(name)
+}
+dogs.sort()
+dogs.reverse()
+let list = document.querySelector("#assignment3");
+for (let dog of dogs) {
+    const li = document.createElement('li')
+    li.textContent = dog;
+    list.appendChild(li);
+}
+</script>
+
+<script> 'use strict';
+// assignment 6
+function getRandomInt() {
+    return Math.floor(Math.random() * 6 + 1);
+}
+const results = []
+let dice = getRandomInt();
+results.push(dice);
+while (dice !== 6) {
+    dice = getRandomInt();
+    results.push(dice);
+}
+let list = document.querySelector("#assignment6");
+for (let dice of results) {
+    const li = document.createElement("li");
+    li.textContent = dice;
+    list.appendChild(li);
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
