@@ -39,6 +39,7 @@ while (true) {
     }
     numbers.push(number)
 }
+
 numbers.sort((a, b) => a - b)
 console.log(numbers)
 
