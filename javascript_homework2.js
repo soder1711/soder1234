@@ -12,21 +12,10 @@ while (true) {
 }
 numbers1.sort((a, b) => a - b)
 numbers1.reverse()
-for (a of numbers1) {
+for (let a of numbers1) {
     console.log(a)
 }
 
-
-while (a !== 0) {
-    let i = prompt("enter a number")
-    numbers1.push(a)
-    a = parseInt(i)
-}
-if (a === 0) {
-    console.log("the loop has ended")
-    numbers1.push(a)
-}
-console.log(numbers1)
 
 
 // assignment 5
